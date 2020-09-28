@@ -1,0 +1,93 @@
+@import "padrao.css";
+
+#mensagens{
+    position: fixed !important;
+    width: 100%;
+    z-index: 9999;
+}
+
+#mensagens #system-message, #mensagens #system-message dd, #mensagens #system-message ul{
+    margin: 0px;
+    padding:0px;
+}
+#mensagens #system-message{
+    position: relative;
+    display: inline-block;
+    background: #ACACAC;
+    text-align: left;
+    padding: 5px 10px;
+    color: #FFF;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+}
+
+#mensagens #system-message ul{
+    list-style: none;
+}
+
+#mensagens #system-message dt.message, #mensagens #system-message dt.notice,
+#mensagens #system-message dt.error{ display: none; }
+
+#topo .menu-topo .conteudo-menu-topo, #corpo{
+    width: 990px;
+    margin: 0 auto;
+}
+
+/*
+/*
+--------- Slideshow ---------*/
+#slideshow{
+    height: 305px;
+    padding: 20px 0px 22px 0px;
+    margin-bottom: 16px;
+	background-image: url(../imagens/fundo-slideshow.jpg);
+}
+
+#slideshow .ja-slidewrap{
+    height: 304px;
+    width: 979px;
+    margin: 0 auto;
+}
+
+#slideshow .ja-slide-item{ background: #FFF; }
+
+#slideshow .sombra{
+    background: url("../imagens/sombra-slideshow.png")no-repeat;
+    height: 49px;
+    margin: 0 auto;
+    width: 979px;
+}
+
+.ja-slide-buttons span.ja-slide-next {
+    background: url("../imagens/slideshow-nav.png") no-repeat -47px 0 transparent;
+    display: block;
+    height: 47px;
+    overflow: hidden;
+    right: 0px;
+    text-indent: -999em;
+    top: 135px;
+    width: 42px;
+}
+
+.ja-slide-buttons span.ja-slide-prev {
+    background: url("../imagens/slideshow-nav.png") no-repeat 0px 0px transparent;
+    display: block;
+    height: 47px;
+    left: 10px;
+    overflow: hidden;
+    text-indent: -999em;
+    top: 135px;
+    width: 38px;
+}
+.ja-slide-buttons span {
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    float: left;
+    position: absolute;
+    z-index: 100;
+}
+/*
+--------- Fim Slideshow ---------*/

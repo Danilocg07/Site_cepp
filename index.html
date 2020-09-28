@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>CEP - Porangatu-GO</title>
+<link rel="stylesheet" href="css/estilo.css" type="text/css" />
+
+<!--Inicio dos codigos ss-->
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/superfish.css" type="text/css">
+<script type="text/javascript" async="" src="js/ga.js"></script>
+<script type="text/javascript" src="js/mootools.js"></script>
+<script type="text/javascript" src="js/caption.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript" src="js/supersubs.js"></script>
+<script type="text/javascript">
+    $j(document).ready(function(){
+       $j("ul.menu-dropdown").supersubs({
+            minWidth:    15,
+            maxWidth:    25,
+            extraWidth:  1
+        }).superfish({
+            speed: 'fast'
+        });
+    });
+</script>
+<!--Fim dos codigos ss-->
+
+</head>
+
+<body>
+<div id="div_geral">
+	<div id="div_central">
+    	<div id="div_topo"><img src="imagens/logo_cepp.png" align="left" style="padding: 8px 0 0 15px;" /></div>
+        
+        <!--INICIO DIV SLIDER-->
+        <div id="slideshow">
+			<div class="ja-slidewrap" id="ja-slide-37" style="visibility: visible;" onmouseover="mostreControles();" onmouseout="escondaControle();">
+				<div class="ja-slide-main-wrap" style="width: 979px; height: 304px;">
+					<div class="ja-slide-main" style="width: 1958px; left: 0px;">
+						<div class="ja-slide-item" style="width: 979px; height: 304px;"><img src="imagens/banner-curso-ambiente-sade-seguranca_979_304.png" alt=""></div>						
+							<div class="ja-slide-item" style="width: 979px; height: 304px;"><img src="imagens/banner-curso-informatica_979_304.png" alt=""></div>						
+					</div>		
+					<div class="maskDesc" style="display: block; position: absolute; width: 979px; height: 304px; visibility: hidden; zoom: 1; opacity: 0;">
+                    	<div class="inner"></div>
+                    </div>
+				</div>
+				<div class="ja-slide-buttons clearfix">
+					<span id="slidePrev" class="ja-slide-prev ">« Previous</span>
+					<span id="slideNext" class="ja-slide-next">Próximo  »</span>
+				</div>
+			</div>
+<script type="text/javascript">
+    function mostreControles(){
+        document.getElementById('slidePrev').style.display = '';
+        document.getElementById('slideNext').style.display = '';
+    }
+
+    function escondaControle(){
+        document.getElementById('slidePrev').style.display = 'none';
+        document.getElementById('slideNext').style.display = 'none';
+    }
+</script><script type="text/javascript">
+  var Ja_direction = '';
+  var cookie_path = '/';
+  var cur_template_name = 'cepss';
+  var Ja_maskAlignment = 'bottom';
+  window.addEvent('load', function(){
+	 
+	   if(typeof(tmpl_name) =='undefined')
+	   {
+		  cookie_path = "cepss_direction";
+	   }
+	   else
+	   {
+		  cookie_path = tmpl_name+"_direction";
+	   }
+		Ja_direction = Cookie.get(cookie_path);
+		if(Ja_direction == "")
+		{
+			Ja_direction = 'ltr';
+
+		}
+	   var style_l_value = 'auto';
+	   if(cur_template_name == 'ja_norite')
+	   {
+			style_l_value = '0';
+	   }
+	   if(Ja_direction == 'rtl')
+		{
+			setStyleLinkWithRTLDirection();
+			$('ja-slide-37').getElement(".ja-slide-main").setStyle('left',style_l_value);
+			$('ja-slide-37').getElement(".ja-slide-main").setStyle('right','auto');
+			if(Ja_maskAlignment == 'right')
+			{
+				Ja_maskAlignment == 'left';
+			}
+			else if(Ja_maskAlignment == 'left')
+			{
+				Ja_maskAlignment == 'right';
+			}
+		}
+    new JASlideshow2('ja-slide-37', {	
+                startItem: 0,
+                showItem: 4,
+                itemWidth: 20,
+                itemHeight: 20,
+                mainWidth: 979,
+                mainHeight: 304,
+				maskWidth: 979,
+				maskHeigth:304,
+                duration: 400,
+                transition: Fx.Transitions.Quad.easeInOut,
+                animation: 'move',
+				animationRepeat: 'true',
+                thumbOpacity:0.8,			
+                maskOpacity: 0.8,
+                buttonOpacity: 0.4,
+                showDesc: '',
+                descMode: 'mouseover',
+                readmoretext: 'Readmore',
+                overlap: 0,
+                navigation:'',
+                urls:['',''],
+				targets:['',''],
+				autoPlay: true,
+				
+				interval: 5000,
+				maskAlignment: Ja_maskAlignment,
+				languageDirection:( typeof Ja_direction == 'string') ? Ja_direction : '',
+				maskerTransStyle:'opacity',
+				maskerTrans:Fx.Transitions.linear,
+				navePos:'horizontal'	
+              });
+  });
+</script>	
+
+<script type="text/javascript" language="javascript">
+ function setStyleLinkWithRTLDirection()
+ {
+    var links = document.getElementsByTagName ('link');
+		var script = document.createElement('link');
+	script.setAttribute('type', 'text/css');
+	script.setAttribute('rel', 'stylesheet');
+	script.setAttribute('href', 'http://cepss.com.br/modules/mod_jaslideshow2/assets/themes/default/mod_jaslideshow2_rtl.css');
+	document.getElementsByTagName("head")[0].appendChild(script);
+ }	
+</script>	
+        <div class="sombra"></div>
+    </div>
+        <!--FIM DIV SLIDER-->
+        <div id="div_menu">
+        <ul class="nav">
+			<li><a href="#">CURSOS FIC</a></li>
+			<li><a href="javascript:pagina('#')">CURSOS TÉCNICOS</a></li>
+			<li><a href="javascript:pagina('#')">BOLSA FUTURO</a></li>
+			<li><a href="javascript:pagina('#')">PRONATEC</a></li>
+			<li><a href="javascript:pagina('#')">INSTITUCIONAL</a></li>
+			<li><a href="javascript:pagina('#')">PROCESSO SELETIVO</a></li>
+			<li><a href="javascript:pagina('#')">CONTATO</a></li>
+		</ul>
+		</div>
+		<div id="div_conteudo"><a href="doc/Edital_Pregão_Presencial_2014.pdf" target="_blank"><img src="imagens/edital.jpg" /></a></div>
+	</div>
+    <img src="imagens/ln_rodape.jpg" style="margin: 20px 0 0 0;" />
+    <div id="div_rodape">
+    	Centro de Educa&ccedil;&atilde;o Profissional de Porangatu - CEPP &mdash;
+        Avenida Mutin&oacute;polis, Jardim Bras&iacute;lia. Porangatu-GO | (62) 3362-5800<br />
+        &copy; 2014. Todos os direitos reservados.
+    </div>
+</div>
+</body>
+</html>

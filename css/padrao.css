@@ -1,0 +1,22 @@
+/*body, .module div div div h3, #topo .menu-topo, #corpo, #corpo .col-esquerda, #corpo .col-centro, #corpo,
+.col-direita, .module, .module div, .module div div, .module *,
+#corpo .col-centro-max div, #corpo .col-centro-max div div, #corpo .col-centro-max div div div,
+#corpo .col-centro .moduletable, #corpo .col-centro .moduletable h3, #corpo .col-centro .moduletable ul,
+#corpo .col-centro .moduletable li, #topo .menu-topo .menu ul, #rodape .moduletable p{
+    padding: 0px;
+    margin: 0px;
+    font-family: Helvetica, "Trebuchet MS", Arial;
+    font-size: 12px;
+}
+
+a img{ border: none; }
+
+body{ text-align: center; }
+
+#topo .menu-topo .menu ul, .module ul, #corpo .col-centro .moduletable ul{
+    list-style: none;
+}
+
+#corpo, #topo, #menu, #rodape{ text-align: left; }
+
+.clr{ clear: both; }*/

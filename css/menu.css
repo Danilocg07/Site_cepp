@@ -1,0 +1,30 @@
+ul.nav { 
+	margin:0; 
+	padding:0;
+	}
+	
+ul.nav li {
+	list-style:none;	
+	display: inline;
+	}
+ul.nav li a {
+	float:left;
+	border-top:0.1em solid #fff;
+	border-right:0.1em solid #909090;
+	border-bottom:0.1em solid #909090;
+	border-left:0.1em solid #fff;
+	width: 142.5px;
+	height: 22px;
+	font: 11px  Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	background: #f1f1f1;
+	color:#333;
+	text-align: center;
+	text-decoration:none;
+	padding: 10px 0 0 0;
+	}
+ul.nav a:hover{
+	background: #718FC8;
+	color:#fff;
+	border-color:#000 #fafafa #fafafa #000;
+	}
